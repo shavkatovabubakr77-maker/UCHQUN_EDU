@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCHQUN - Kursni tanlang</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page-container">
+        <!-- Header / Navbar -->
+        <header class="navbar">
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>UCHQUN</h1>
+                    <span>YOSH BILIMDONLAR UYI</span>
+                </div>
+            </div>
+
+            <div class="user-profile">
+                <button class="notif-btn">
+                    <i class="fa-regular fa-bell"></i>
+                </button>
+                <div class="avatar">
+                    <img src="https://i.pravatar.cc/100?img=33" alt="User Avatar">
+                </div>
+            </div>
+        </header>
+
+        <!-- Asosiy Kontent -->
+        <main class="main-content">
+            <div class="welcome-section">
+                <h2>Assalomu alaykum, bilimdon!</h2>
+                <p>O'zingiz uchun ruxsat etilgan dasturni tanlang va ta'lim olishni boshlang.</p>
+            </div>
+
+            <!-- Kurslar kartalari -->
+            <div class="courses-grid">
+                
+                <!-- 1. Frontend -->
+                <div class="course-card active">
+                    <div class="card-header">
+                        <div class="card-icon fontend-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <span class="badge open">OCHIQ</span>
+                    </div>
+                    <h3>Frontend Dasturlash</h3>
+                    <p class="card-desc">Veb-sahifalar va interaktiv foydalanuvchi interfeyslarini yaratish</p>
+                    
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                    </div>
+
+                    <button class="start-btn">Kursni boshlash</button>
+                </div>
+
+                <!-- 2. Backend -->
+                <div class="course-card active">
+                    <div class="card-header">
+                        <div class="card-icon backend-icon">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+                        <span class="badge open">OCHIQ</span>
+                    </div>
+                    <h3>Backend Dasturlash</h3>
+                    <p class="card-desc">Ma'lumotlar bazasi, serverlar va dasturiy ta'minot arxitekturasi</p>
+                    
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Node.js</span>
+                        <span>Django</span>
+                        <span>SQL</span>
+                    </div>
+
+                    <button class="start-btn">Kursni boshlash</button>
+                </div>
+
+                <!-- 3. Mobile -->
+                <div class="course-card locked">
+                    <div class="card-header">
+                        <div class="card-icon mobile-icon">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+                        <span class="lock-icon"><i class="fa-solid fa-lock"></i></span>
+                    </div>
+                    <h3>Mobile Dasturlash</h3>
+                    <p class="card-desc">Android va iOS tizimlari uchun zamonaviy ilovalar yaratish</p>
+                    
+                    <div class="tags">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                        <span>React Native</span>
+                    </div>
+
+                    <button class="locked-btn" disabled>
+                        <i class="fa-solid fa-lock"></i> Yopiq (Navbat kutilmoqda)
+                    </button>
+                </div>
+
+                <!-- 4. Kompyuter Savodxonligi -->
+                <div class="course-card locked">
+                    <div class="card-header">
+                        <div class="card-icon pc-icon">
+                            <i class="fa-solid fa-desktop"></i>
+                        </div>
+                        <span class="lock-icon"><i class="fa-solid fa-lock"></i></span>
+                    </div>
+                    <h3>Kompyuter Savodxonligi</h3>
+                    <p class="card-desc">IT asboblar, Windows, Office dasturlari va xavfsizlik asoslari</p>
+                    
+                    <div class="tags">
+                        <span>Windows</span>
+                        <span>MS Office</span>
+                        <span>IT Foundation</span>
+                    </div>
+
+                    <button class="locked-btn" disabled>
+                        <i class="fa-solid fa-lock"></i> Yopiq (Navbat kutilmoqda)
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Pastki Ogohlantirish Paneli -->
+            <div class="info-alert">
+                <div class="alert-icon">
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <p>Tizim cheklovi: Bir vaqtda faqatgina 1-2 ta kurs ochiq bo'lishi mumkin. Qolgan kurslarni faolmashtirish uchun ularni yakunlashingiz kerak.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
